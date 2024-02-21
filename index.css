@@ -1,0 +1,673 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    perspective: 800px;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.354);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 97%;
+    background-color: rgba(255, 255, 255, 0.237);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;  
+    gap: 10vw;
+    height: 80px;
+    margin-left: 1.5vw;
+    border-radius: 10px;
+    position: fixed;
+    z-index: 99;
+    margin-top: 10px;
+    color: white;
+}
+
+nav .elements{
+    display: flex;
+    gap: 5vw;
+    font-family: 'poppins';
+    font-weight: 500;
+}
+nav .elements h4::before{
+    content: "";
+    height: 2px;
+    width: 0%;
+    background-color: #002C36;
+    display: block;
+    transition: .2s all linear;
+    position: relative;
+    top: 25px;
+}
+nav .elements h4:hover::before{
+    width: 100%;
+}
+nav .elements h4:hover{
+    color: #002C36;
+    font-weight: 800;
+    transition: .2s all ease;
+}
+nav .right{
+    display: flex;
+    justify-content: space-between;
+    gap: 2vw;
+    align-items: center;
+}
+nav .right #login{
+    background-color: #002C36;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 50px;
+}
+nav .right h3:hover{
+    font-weight: 900;
+}
+
+.content{
+    text-align: center;
+}
+.content h1{
+    font-size: 80px;
+    font-weight: 700;
+    color: white;
+    line-height: 75px;
+}
+.content p{
+    color: white;
+    font-size: 1rem;
+    margin-top: 30px;
+    line-height: 3px;
+}
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.search{
+    width: 50vw;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 50px;
+    margin-top: 3%;
+    margin-left: 5%;
+
+}
+.search i{
+    height: 100%;
+    width: 50px;
+    color: #00000068;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+.search input{
+    width: 100%;
+    border: none;
+    padding-left: 20px;
+    color: #002C36;
+    height: 100%;
+}
+.search button{
+    width: 20%;
+    height: 80%;
+    background-color: #002C36;
+    border: none;
+    border-radius: 50px;
+    margin-right: 8px;
+    color: white;
+}
+.search button:hover{
+    font-weight: 800;
+}
+
+marquee{
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    font-weight: 800;
+    font-family: "Poppins";
+    align-self: flex-end;
+    position: absolute;
+    left: 0px;
+}
+marquee h1:hover{
+    color: white;
+    -webkit-text-stroke: none;
+    transition: 0.4s all ease;
+}
+marquee h1{
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#page2{
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.boxes{
+    height: 400px;
+    width: 300px;
+}
+
+.img-1{
+    background-image: url("imgs/planning.png");
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    text-align: center;
+    margin-left: 60px;
+    margin-bottom: 20px;
+}
+.img-2{
+    background-image: url("imgs/map.png");
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    margin-left: 50px;
+    margin-bottom: 20px;
+
+
+}
+.img-3{
+    background-image: url("imgs/handshake.png");
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    margin-left: 50px;
+    margin-bottom: 20px;
+
+}
+.img:hover{
+    transform: scale(1.1);
+    transition: 0.5s all ease;
+}
+.tagline:hover{
+    transform: scale(1.1);
+    transition: 0.2s all ease;
+}
+.text:hover{
+    transform: scale(1.1);
+    transition: 0.2s all ease;
+}
+.tagline{
+    font-family: 'Poppins';
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-align: center;
+    color: #016f88;
+    margin-bottom: 20px;
+}
+
+.text{
+    font-family: 'poppins';
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-align: center;
+    color: rgb(101, 101, 101);
+}
+.page3{
+    height: 25vh;
+    width: 70%;
+    display: flex;
+}
+#page3-left{
+    width: 50%;
+    height: 100%;
+}
+#page3-left h5{
+    color: rgba(0, 0, 0, 0.62);
+    width: 100%;
+    height: 50px;
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+#page3-left h1{
+    color: black;
+    width: auto;
+    font-size: 3rem;
+    line-height: 130%;
+}
+#page3-right{
+    width: 50%;
+    height: 100%;
+}
+#page3-right p{
+    margin-bottom: 10px;
+    color: rgb(84, 84, 84);
+    font-weight: 600;
+    font-size: 1rem;
+}
+#page3-right a{
+    color: #006379;
+    text-decoration: none;
+    font-weight: 600 ;
+}
+#page3-right a::before{
+    content: "";
+    height: 2px;
+    width: 0%;
+    background-color: #00596d;
+    display: block;
+    transition: .2s all linear;
+    position: relative;
+    top: 25px;
+}
+#page3-right a:hover::before{
+    width: 20%;
+}
+
+.page4{
+    width: 70%;
+    height: 70vh;
+    margin-top: 20px;
+}
+
+
+#page4-upper{
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#page4-upper #thailand{
+    background-image: url("imgs/thailand.jpg");
+    width: 49%;
+    height: 90%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: all ease .4s;
+
+}
+.transition:hover{
+    transform: scale(1.01);
+    transform: rotate3d(-1,1,0,10deg);
+    transition: .1s all linear;
+
+}
+
+#page4-upper h3{
+    color: white;
+    position: absolute;
+    top: 80%;
+    left: 4%;
+}
+#page4-upper #bali{
+    background-image: url("imgs/bali.jpg");
+    width: 49%;
+    height: 90%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+#page4-lower{
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+#page4-lower #eastjava{
+    background-image: url("imgs/eastjava.jpg");
+    width: 27%;
+    height: 90%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+
+}
+#page4-lower #rome{
+    background-image: url("imgs/rome.jpg");
+    width: 42%;
+    height: 90%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+
+}
+#page4-lower #mouritias{
+    background-image: url("imgs/mouritias.jpg");
+    width: 27%;
+    height: 90%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+#page4-lower h3{
+    position: absolute;
+    top: 80%;
+    left: 4%;
+}
+
+.overlays{
+    height: 100%;
+    width: 100%;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #00596db5;
+    opacity: 0;
+    transition: all ease .4s;
+}
+.overlays p{
+    width: 70%;
+    margin-top: 20px;
+    line-height: 100%;
+}
+.overlays:hover{
+    opacity: 1;
+}
+
+.page5{
+    width: 70%;
+    height: 70vh;
+    margin: 100px 0px;
+    
+}
+#page5-upper{
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+#page5-upper #offerbox{
+    width: 57%;
+    height: 100%;
+    border: 2px solid rgb(101, 101, 101);
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.517);
+    
+}
+#offerbox h5{
+    padding-left: 30px;
+    color: rgb(87, 87, 87);
+    margin-top: 20px;
+    font-family: 500;
+}
+#offerbox h2{
+    padding-left: 30px;
+    margin-top: 10px;
+    font-weight: 800;
+}
+#offerbox p{
+    font-size: 0.8rem;
+    padding-left: 30px;
+    margin-top: 10px;
+    font-weight: 600;
+    color: rgb(82, 82, 82);
+}
+#page5-upper #hotel-1{
+    width: 40%;
+    height: 100%;
+    border-radius: 20px;
+    background-image: url("imgs/hotel\ 1.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#page5-upper #box{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#box button{
+    height: 30px;
+    width: 100px;
+    background-color: #002C36;
+    color: white;
+    border-radius: 50px;
+    border: none;
+    margin-top: 70px;
+    margin-left: 30px;
+}
+#box button:hover{
+    font-weight: 700;
+}
+#box #airplane{
+    height: 100px;
+    width: 160px;
+    background-image: url("imgs/airplane.png");
+    background-size: cover;
+    background-position: center;
+   margin-right: 20px;
+   margin-top: 35px;
+   transform: rotate(10deg);
+}
+.info{
+    position: absolute;
+    top: 70%;
+    left: 4%;
+    color: rgb(255, 255, 255);
+    font-size: .8rem;
+}
+.info .name{
+    font-size: 1rem;
+    font-weight: 800;
+}
+.info img{
+    height: 13px;
+    width: 13px;
+    background-size: cover;
+    background-position: center;
+    margin-right: 5px;
+}
+#page5-lower{
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+#page5-lower #hotel2{
+    background-image: url("imgs/hotel\ 2.jpg");
+    width: 49%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    position: relative;
+}
+#page5-lower #hotel3{
+    background-image: url("imgs/hotel\ 3.jpg");
+    width: 49%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    position: relative;
+}
+.transition2:hover{
+    transition: .1s all linear;
+    transform: scale(1.02);
+    box-shadow: 2px 2px 10px #002C36;
+}
+
+.review-page{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.video2{
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.review-page h2{
+    font-size: 5rem;
+    font-weight: 800;
+    text-align: center;
+    z-index: 99;
+    color: white;
+}
+.review-page h5{
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    z-index: 99;
+    color: white;
+    margin-bottom: 50px;
+}
+#review-content{
+    height: 70%;
+    width: 70%;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 40% 40%;
+    gap: 50px;
+    margin-right: 100px;
+}
+
+#review-content .reviewbox{
+    z-index: 10;
+    background-color: white;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.reviewbox p{
+    font-size: 0.6rem;
+    line-height: 100%;
+   
+    margin-top: 10px;
+    width: 90%;
+
+}
+.reviewbox h1{
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+}
+.reviewbox img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+footer{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-box{
+    height: 90%;
+    width: 80%;
+    background-color: #002C36;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 20px;
+}
+.footer-box .f-main{
+    height: 70%;
+    width: 33%;
+    color: white;
+}
+.f-main p{
+    font-size: .8rem;
+    line-height: 120%;
+    margin-top: 10px;
+    color: rgb(187, 187, 187);
+    width: 90%;
+}
+.f-main h6{
+    font-size: .9rem;
+    margin-top: 50px;
+}
+.f-main .f-icons i{
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.footer-box .f-box{
+    height: 70%;
+    width: 20%;
+    color: white;
+    text-align: center;
+}
+.footer-box .f-box h3{
+    font-family: 600;
+    margin-bottom: 30px;
+}
+.footer-box .f-box p{
+    font-size: .9rem;
+    margin-bottom: 20px;
+    color: rgb(186, 186, 186);
+}
+
+.f-last{
+    width: 90%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#last{
+    margin-top: 50px;
+    color: white;
+}
+#last2{
+    margin-top: 135px;
+    color: white;
+}
